@@ -1,10 +1,7 @@
-" =======================================
-" Who: Sven Sporer
-" Via: Jeremy Mack (@mutewinter)
-" What: .vimrc of champions
-" Version: 1.0 (this may never change because who versions dot files,
-" honestly)
-" =======================================
+" =========================================
+" Who:   Sven Sporer | sohooo
+" Where: https://github.com/sohooo/vimfiles
+" =========================================
 
 " ----------------------------------------
 " Vundle

@@ -1,9 +1,14 @@
 # sohooo's VIM config
 
 This setup is based on various sources all around github. Huge credits go to:
-* [mutewinter/dot_vim](https://github.com/mutewinter/dot_vim)]
-* [skwp/dotfiles](https://github.com/skwp/dotfiles)
-* [MacVim w/ Drawer](https://github.com/alloy/macvim)]
+
+* [mutewinter's dotvim](https://github.com/mutewinter/dot_vim)
+* [skwp's dotfiles](https://github.com/skwp/dotfiles)
+* [MacVim w/ Drawer](https://github.com/alloy/macvim)
+
+## Screenshot
+
+![MacVim with Drawer](http://dl.dropbox.com/u/393159/sohooo_macvim.png "Macvim")
 
 ## Installation
 
