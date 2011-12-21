@@ -14,7 +14,9 @@ This setup is based on various sources all around github. Huge credits go to:
 
 1. `cd; git clone http://github.com/sohooo/vimfiles.git .vimfiles` in your home folder.
 2. `ln -s .vimfiles .vim && ln -s .vimfiles/vimrc .vimrc` to make the symbolic links.
-3. Enjoy!
+3. Install the awesome [Vundle](https://github.com/gmarik/vundle) with `git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
+4. Start Vim and type `:BundleInstall` to install the plugins defined in `.vimrc`.
+5. Enjoy!
 
 ## Bindings
 
