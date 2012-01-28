@@ -22,17 +22,18 @@ This setup is based on various sources all around github. Huge credits go to:
 
 Here's a list of useful keyboard bindings:
 
-* `,gcc`  toggle Comment on/off
-* `,d`    toggle NerdTree
-* `,f`    FuzzyFind file
-* `,n`    toggle IndentGuides
-* `,u`    toggle Gundo
-* `,vim`  edit vimrc
-* `,vir`  edit README.md (to look up bindings)
-* `,tt`   change tabs
-* `jj`    remap von ESC; this rox!
-* `F9`    toggle paste/nopaste
-* `F10`   toggle number/nonumber
+* `,gcc`    toggle Comment on/off
+* `,d`      toggle NerdTree
+* `,f`      find file (with CtrlP)
+* `ctrl+p`  find file (with CtrlP)
+* `,n`      toggle IndentGuides
+* `,u`      toggle Gundo
+* `,vim`    edit vimrc
+* `,vir`    edit README.md (to look up bindings)
+* `,tt`     change tabs
+* `jj`      remap von ESC; this rox!
+* `F9`      toggle paste/nopaste
+* `F10`     toggle number/nonumber
 
 ### Fugitive
 

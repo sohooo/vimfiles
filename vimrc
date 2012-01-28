@@ -21,8 +21,9 @@ Bundle 'gmarik/vundle'
 " ---------------
 
 " Navigation
-Bundle 'FuzzyFinder'
+" Bundle 'FuzzyFinder'
 Bundle 'sjl/gundo.vim'
+Bundle 'kien/ctrlp.vim'
 " UI Additions
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'Lokaltog/vim-powerline'
@@ -338,9 +339,14 @@ let g:miniBufExplModSelTarget=1
 "let g:fuf_modesDisable=['mrucmd'] " Enables FufMruFile
 "nnoremap <silent><C-y> :FufMruFile<CR>
 "nnoremap <silent><C-u> :FufFileWithCurrentBufferDir<CR>
-nnoremap <leader>f :FufFile<CR>
+"nnoremap <leader>f :FufFile<CR>
 "nnoremap <leader>fm :FufMruFile<CR>
 "nnoremap <leader>fb :FufBuffer<CR>
+
+" ---------------
+" CtrlP
+" ---------------
+nnoremap <leader>f :CtrlP<CR>
 
 " ---------------
 " NERDTree
