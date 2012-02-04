@@ -17,7 +17,7 @@ This setup is based on various sources all around github. Huge credits go to:
 3. Install the awesome [Vundle](https://github.com/gmarik/vundle) with `git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
 4. Start Vim and type `:BundleInstall` to install the plugins defined in `.vimrc`.
 5. Enjoy!
-6. Bonus: For a even prettier status bar, use one of the patched fonts from the [Powerline wiki](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts)
+6. Bonus: For an even prettier status bar, use one of the patched fonts from the [Powerline wiki](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts)
 
 ## Bindings
 
