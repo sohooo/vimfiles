@@ -8,7 +8,7 @@ This setup is based on various sources all around github. Huge credits go to:
 
 ## Screenshot
 
-![MacVim with Drawer](http://dl.dropbox.com/u/393159/sohooo_macvim.png "Macvim")
+![MacVim with Drawer](http://dl.dropbox.com/u/393159/macvim/macvim_sohooo.png "Macvim")
 
 ## Installation
 
