@@ -21,9 +21,8 @@ Bundle 'gmarik/vundle'
 " ---------------
 
 " Navigation
-" Bundle 'FuzzyFinder'
+Bundle 'FuzzyFinder'
 Bundle 'sjl/gundo.vim'
-Bundle 'kien/ctrlp.vim'
 " UI Additions
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'Lokaltog/vim-powerline'
@@ -37,18 +36,19 @@ Bundle 'mutewinter/ir_black_mod'
 Bundle 'tomasr/molokai'
 Bundle 'cschlueter/vim-wombat'
 " Commands
-Bundle 'tsaleh/vim-tcomment'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'EasyGrep'
+Bundle 'YankRing'
 " Automatic Helpers
 Bundle 'IndexedSearch'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
 Bundle 'gregsexton/MatchTag'
 Bundle 'Shougo/neocomplcache'
+Bundle 'sickill/vim-pasta'
 " SnipMate
 Bundle "garbas/vim-snipmate"
 " SnipMate Depedencies
@@ -326,27 +326,29 @@ if has('win32') || has('win64')
 endif
 
 " ---------------
-" Minibuffer Explorer
-" ---------------
-let g:miniBufExplMapWindowNavVim=1
-let g:miniBufExplMapWindowNavArrows=1
-let g:miniBufExplMapCTabSwitchBufs=1
-let g:miniBufExplModSelTarget=1
-
-" ---------------
 " FuzzyFinder
 " ---------------
-"let g:fuf_modesDisable=['mrucmd'] " Enables FufMruFile
-"nnoremap <silent><C-y> :FufMruFile<CR>
-"nnoremap <silent><C-u> :FufFileWithCurrentBufferDir<CR>
-"nnoremap <leader>f :FufFile<CR>
-"nnoremap <leader>fm :FufMruFile<CR>
-"nnoremap <leader>fb :FufBuffer<CR>
+let g:fuf_modesDisable=['mrucmd'] " Enables FufMruFile
+nnoremap <silent><C-y> :FufMruFile<CR>
+nnoremap <silent><C-u> :FufFileWithCurrentBufferDir<CR>
+nnoremap <leader>f :FufFile<CR>
+nnoremap <leader>fm :FufMruFile<CR>
+nnoremap <leader>fb :FufBuffer<CR>
 
 " ---------------
 " CtrlP
 " ---------------
-nnoremap <leader>f :CtrlP<CR>
+" nnoremap <leader>f :CtrlP<CR>
+
+" ---------------
+" YankRing
+" ---------------
+nnoremap <leader>y :YRShow<CR>
+
+" ---------------
+" Powerline
+" ---------------
+let g:Powerline_symbols = 'fancy'
 
 " ---------------
 " NERDTree

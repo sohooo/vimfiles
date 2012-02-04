@@ -17,15 +17,17 @@ This setup is based on various sources all around github. Huge credits go to:
 3. Install the awesome [Vundle](https://github.com/gmarik/vundle) with `git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
 4. Start Vim and type `:BundleInstall` to install the plugins defined in `.vimrc`.
 5. Enjoy!
+6. Bonus: For a even prettier status bar, use one of the patched fonts from the [Powerline wiki](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts)
 
 ## Bindings
 
 Here's a list of useful keyboard bindings:
 
-* `,gcc`    toggle Comment on/off
+* `ctrl-shift-d` OS X File Drawer
+* `,cc`     toggle Comment on/off
 * `,d`      toggle NerdTree
-* `,f`      find file (with CtrlP)
-* `ctrl+p`  find file (with CtrlP)
+* `,f`      find file w/ FuzzyFinder
+* `,y`      show YankRing
 * `,n`      toggle IndentGuides
 * `,u`      toggle Gundo
 * `,vim`    edit vimrc
