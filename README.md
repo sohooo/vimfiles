@@ -24,12 +24,12 @@ This setup is based on various sources all around github. Huge credits go to:
 Here's a list of useful keyboard bindings:
 
 * `ctrl-shift-d` OS X File Drawer
-* `,cc`     toggle Comment on/off
 * `,d`      toggle NerdTree
 * `,f`      find file w/ FuzzyFinder
 * `,y`      show YankRing
 * `,n`      toggle IndentGuides
 * `,u`      toggle Gundo
+* `gcc`     toggle comment on/off
 * `,vim`    edit vimrc
 * `,vir`    edit README.md (to look up bindings)
 * `,tt`     change tabs

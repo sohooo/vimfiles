@@ -36,12 +36,13 @@ Bundle 'mutewinter/ir_black_mod'
 Bundle 'tomasr/molokai'
 Bundle 'cschlueter/vim-wombat'
 " Commands
-Bundle 'scrooloose/nerdcommenter'
+Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/YankRing.vim'
 Bundle 'EasyGrep'
-Bundle 'YankRing'
+Bundle 'Gist.vim'
 " Automatic Helpers
 Bundle 'IndexedSearch'
 Bundle 'Raimondi/delimitMate'
@@ -49,6 +50,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'gregsexton/MatchTag'
 Bundle 'Shougo/neocomplcache'
 Bundle 'sickill/vim-pasta'
+Bundle 'tpope/vim-ragtag'
 " SnipMate
 Bundle "garbas/vim-snipmate"
 " SnipMate Depedencies
@@ -285,14 +287,6 @@ nmap <silent> <leader>u :GundoToggle<CR>
 let g:showmarks_enable=0
 
 " ---------------
-" SuperTab
-" ---------------
-" Set these up for cross-buffer completion (something Neocachecompl has a hard
-" time with)
-let g:SuperTabDefaultCompletionType="<c-x><c-n>"
-let g:SuperTabContextDefaultCompletionType="<c-x><c-n>"
-
-" ---------------
 " Neocachecompl
 " ---------------
 if !has('gui_macvim')
@@ -329,16 +323,11 @@ endif
 " FuzzyFinder
 " ---------------
 let g:fuf_modesDisable=['mrucmd'] " Enables FufMruFile
-nnoremap <silent><C-y> :FufMruFile<CR>
-nnoremap <silent><C-u> :FufFileWithCurrentBufferDir<CR>
+"nnoremap <silent><C-y> :FufMruFile<CR>
+"nnoremap <silent><C-u> :FufFileWithCurrentBufferDir<CR>
 nnoremap <leader>f :FufFile<CR>
 nnoremap <leader>fm :FufMruFile<CR>
 nnoremap <leader>fb :FufBuffer<CR>
-
-" ---------------
-" CtrlP
-" ---------------
-" nnoremap <leader>f :CtrlP<CR>
 
 " ---------------
 " YankRing
