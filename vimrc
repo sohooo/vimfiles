@@ -68,6 +68,7 @@ Bundle 'itspriddle/vim-jquery'
 Bundle 'tpope/vim-rails'
 Bundle 'mutewinter/taskpaper.vim'
 Bundle 'leshill/vim-json'
+Bundle 'rodjek/vim-puppet'
 " Libraries
 Bundle 'L9'
 Bundle 'tpope/vim-repeat'
@@ -233,6 +234,7 @@ nmap <silent> <C-l> :wincmd l<CR>
 
 " Fixes common typos
 command W w
+command Wq wq
 command Q q
 map <F1> <Esc>
 imap <F1> <Esc>
