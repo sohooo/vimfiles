@@ -31,7 +31,6 @@ Bundle 'godlygeek/csapprox'
 Bundle 'Rykka/ColorV'
 Bundle 'skammer/vim-css-color'
 Bundle 'ShowMarks'
-Bundle 'Headlights'
 " Colorschemes
 Bundle 'mutewinter/ir_black_mod'
 Bundle 'tomasr/molokai'
