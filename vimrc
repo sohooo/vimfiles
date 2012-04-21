@@ -67,6 +67,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'itspriddle/vim-jquery'
 Bundle 'tpope/vim-rails'
 Bundle 'mutewinter/taskpaper.vim'
+Bundle 'tpope/vim-cucumber'
 Bundle 'leshill/vim-json'
 Bundle 'rodjek/vim-puppet'
 " Libraries
@@ -363,6 +364,7 @@ nnoremap <leader>fb :FufBuffer<CR>
 " YankRing
 " ---------------
 nnoremap <leader>y :YRShow<CR>
+let g:yankring_history_file = '.vim-yankring-hist'
 
 " ---------------
 " Powerline
