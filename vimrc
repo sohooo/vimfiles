@@ -114,16 +114,13 @@ set background=dark
 " Conditionally Set colorscheme
 if has('unix') && !has('gui_macvim')
   if $TERM == 'xterm-256color'
-    " Neato, 256 color terminal. We can use ir_black_mod
     colorscheme molokai
     "colorscheme ir_black_mod
   else
-    " We can't use ir_black_mod :(
     let g:CSApprox_verbose_level=0
     colorscheme slate
   endif
 else
-  " We're good if not on unix or in MacVim
   colorscheme molokai
   "colorscheme ir_black_mod
 endif
@@ -134,6 +131,7 @@ endif
 set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
+set noswapfile         " It's 2012, Vim.
 
 " ---------------
 " UI
@@ -148,6 +146,9 @@ set showmode           " display mode you're in
 set wrap               " turn on line wrapping
 set numberwidth=5      " width of line numbers
 set antialias          " MacVim: smooth fonts
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+set showbreak=↪
+set fillchars=diff:⣿,vert:│
 
 " ---------------
 " Behaviors
@@ -190,6 +191,9 @@ set hlsearch
 set showmatch  " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
 
+" Highlight VCS conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
 " ---------------
 " Sounds
 " ---------------
@@ -205,6 +209,18 @@ set mouse=a  " Mouse in all modes
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
+
+" ---------------
+" Leader
+" ---------------
+
+" Set leader to ,
+let mapleader=","
+
+nmap <silent> <leader>s :set spell!<CR>
+nmap <silent> <leader>vim :e ~/.vim/vimrc<CR>
+nmap <silent> <leader>vir :e ~/.vim/README.md<CR>
+nmap <leader>u :syntax sync fromstart<cr>:redraw!<cr>
 
 " ----------------------------------------
 " Bindings
@@ -225,23 +241,19 @@ imap <F1> <Esc>
 " remap escape; this rox
 imap jj <Esc>
 
-" Removes doc lookup binding because it's easy to fat finger
-nmap K k
-vmap K k
-
 " Make line completion easier
 imap <C-l> <C-x><C-l>
 
-" ---------------
-" Leader
-" ---------------
+" Keep the cursor in place while joining limes
+nnoremap J mzJ`z
 
-" Set leader to ,
-let mapleader=","
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
-nmap <silent> <leader>s :set spell!<CR>
-nmap <silent> <leader>vim :e ~/.vim/vimrc<CR>
-nmap <silent> <leader>vir :e ~/.vim/README.md<CR>
+" Same when jumping around
+nnoremap g; g;zz
+nnoremap g, g,zz
 
 " toggle paste mode on/off
 map <F9> :set paste!<cr>:set paste?<cr>
@@ -250,14 +262,27 @@ map <F9> :set paste!<cr>:set paste?<cr>
 map <F10> :set number!<cr>:set number?<cr>
 
 " easy tab switching
-:nmap tt :tabnext<cr>
-:map  tt :tabnext<cr>
-:nmap <C-t> :tabnew<cr>
-:imap <C-t> <Esc>:tabnew<cr>
+nmap tt :tabnext<cr>
+map  tt :tabnext<cr>
+nmap <C-t> :tabnew<cr>
+imap <C-t> <Esc>:tabnew<cr>
 
 " same indent behaviour in visual mode
-:vmap > >gv
-:vmap < <gv
+vmap > >gv
+vmap < <gv
+
+" make Y behave like other capitals
+map Y y$
+
+" improve up/down movement on wrapped lines
+nnoremap j gj
+nnoremap k gk
+
+" force saving files that require root permission
+cmap w!! %!sudo tee > /dev/null %
+
+" show current file in NERDTree
+map <silent> <C-s> :NERDTree<CR><C-w>p:NERDTreeFind<CR>
 
 " ----------------------------------------
 " Auto Commands
@@ -266,6 +291,9 @@ map <F10> :set number!<cr>:set number?<cr>
 if has("autocmd")
   " No formatting on o key newlines
   autocmd BufNewFile,BufEnter * set formatoptions-=o
+
+  " automatically reload vimrc when it's saved
+  au BufWritePost .vimrc so ~/.vimrc
 
   " No more complaining about untitled documents
   autocmd FocusLost silent! :wa
@@ -407,7 +435,7 @@ vmap <Leader>t> :Tabularize /=>\zs<CR>
 " ---------------
 nmap <Leader>bi :BundleInstall<CR>
 nmap <Leader>bi! :BundleInstall!<CR>
-nmap <Leader>bu :BundleInstall!<CR> " Because this also updates
+nmap <Leader>bu :BundleInstall!<CR>
 nmap <Leader>bc :BundleClean<CR>
 
 
