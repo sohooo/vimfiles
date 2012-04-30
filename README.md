@@ -25,7 +25,7 @@ Here's a list of useful keyboard bindings:
 
 * `ctrl-shift-d` OS X File Drawer
 * `,d`      toggle NerdTree
-* `,f`      find file w/ FuzzyFinder
+* `,f`      find file w/ CtrlP
 * `,y`      show YankRing
 * `,n`      toggle IndentGuides
 * `,u`      toggle Gundo
@@ -36,6 +36,17 @@ Here's a list of useful keyboard bindings:
 * `jj`      remap von ESC; this rox!
 * `F9`      toggle paste/nopaste
 * `F10`     toggle number/nonumber
+
+### CtrlP
+
+* `<c-jk>`  movement
+* `<c-t>`   open in tab
+* `<c-v>`   open in vertical split
+* `<c-cr>`  open in horizontal split
+* `<c-z>`   mark file to open with `<c-o>`
+* `<c-u>`   clear search field
+* `<c-y>`   create a new file and (parent dir)
+
 
 ### Fugitive
 

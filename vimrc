@@ -21,7 +21,7 @@ Bundle 'gmarik/vundle'
 " ---------------
 
 " Navigation
-Bundle 'FuzzyFinder'
+Bundle 'kien/ctrlp.vim'
 Bundle 'sjl/gundo.vim'
 " UI Additions
 Bundle 'mutewinter/vim-indent-guides'
@@ -351,14 +351,19 @@ if has('win32') || has('win64')
 endif
 
 " ---------------
-" FuzzyFinder
+" CtrlP
 " ---------------
-let g:fuf_modesDisable=['mrucmd'] " Enables FufMruFile
-"nnoremap <silent><C-y> :FufMruFile<CR>
-"nnoremap <silent><C-u> :FufFileWithCurrentBufferDir<CR>
-nnoremap <leader>f :FufFile<CR>
-nnoremap <leader>fm :FufMruFile<CR>
-nnoremap <leader>fb :FufBuffer<CR>
+nnoremap <leader>f :CtrlP<CR>
+" search by filename as default
+let g:ctrlp_by_filename = 1
+" jump to file if already open
+let g:ctrlp_jump_to_buffer = 2
+" let g:ctrlp_map = '<c-p>'
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$',
+  \ }
 
 " ---------------
 " YankRing
