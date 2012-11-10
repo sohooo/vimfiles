@@ -22,7 +22,6 @@ Bundle 'gmarik/vundle'
 
 " Navigation
 Bundle 'kien/ctrlp.vim'
-Bundle 'sjl/gundo.vim'
 Bundle 'mbbill/undotree'
 " UI Additions
 Bundle 'mutewinter/vim-indent-guides'
@@ -326,7 +325,7 @@ let g:showmarks_enable=0
 " ---------------
 nmap <silent> <leader>u :UndotreeToggle<CR>
 if has("persistent_undo")
-  set undodir = '~/.vim/backup'
+  set undodir='~/.vim/backup'
   set undofile
 endif
 
@@ -458,7 +457,6 @@ nmap <Leader>bi :BundleInstall<CR>
 nmap <Leader>bi! :BundleInstall!<CR>
 nmap <Leader>bu :BundleInstall!<CR>
 nmap <Leader>bc :BundleClean<CR>
-
 
 " Enable user's local vim config
 if filereadable(expand("~/.vimrc.local"))
