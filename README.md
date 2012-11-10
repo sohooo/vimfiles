@@ -6,9 +6,13 @@ This setup is based on various sources all around github. Huge credits go to:
 * [skwp's dotfiles](https://github.com/skwp/dotfiles)
 * [MacVim w/ Drawer](https://github.com/alloy/macvim)
 
-## Screenshot
+## Screenshots
 
+### Code View
 ![MacVim with Drawer](http://dl.dropbox.com/u/393159/macvim/macvim_sohooo.png "Macvim")
+
+### Distraction Free
+![Distraction-free Markdown](http://dl.dropbox.com/u/393159/macvim/distraction-free.png "Distraction-free Markdown environment")
 
 ## Installation
 
@@ -17,7 +21,6 @@ This setup is based on various sources all around github. Huge credits go to:
 3. Install the awesome [Vundle](https://github.com/gmarik/vundle) with `git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
 4. Start Vim and type `:BundleInstall` to install the plugins defined in `.vimrc`.
 5. Enjoy!
-6. Bonus: For an even prettier status bar, use one of the patched fonts from the [Powerline wiki](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts)
 
 ## Bindings
 
@@ -80,3 +83,16 @@ Here's a list of useful keyboard bindings:
 * `:cw`  result list
 * `ctrl+w enter`  open result (in CW)
 
+
+## Other Tips
+
+### Statusbar Fonts
+For an even prettier status bar, use one of the patched fonts from the [Powerline wiki](https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts).
+
+
+### Distraction-free Writing
+Distraction-free writing a la iAWriter is supported via [a plugin from LakTEK](http://laktek.com/2012/09/05/distraction-free-writing-with-vim/). Toggle the view with `F4`, and don't forget to disable the OSX native fullscreen view:
+
+    defaults write org.vim.MacVim MMNativeFullScreen 0
+
+You also need the [Cousine Font from Google](http://www.fontsquirrel.com/fonts/cousine) as a free alternative to Nitti Light.
