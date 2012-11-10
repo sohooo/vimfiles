@@ -23,6 +23,7 @@ Bundle 'gmarik/vundle'
 " Navigation
 Bundle 'kien/ctrlp.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'mbbill/undotree'
 " UI Additions
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'Lokaltog/vim-powerline'
@@ -35,6 +36,12 @@ Bundle 'ShowMarks'
 Bundle 'mutewinter/ir_black_mod'
 Bundle 'tomasr/molokai'
 Bundle 'cschlueter/vim-wombat'
+Bundle 'github.vim'
+Bundle 'proton.vim'
+Bundle '29decibel/codeschool-vim-theme'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'jpo/vim-railscasts-theme'
+Bundle 'chriskempson/base16-vim'
 " Commands
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-surround'
@@ -311,11 +318,17 @@ endif
 " Plugin Configuration
 " ----------------------------------------
 
-" Gundo
-nmap <silent> <leader>u :GundoToggle<CR>
-
 " ShowMarks
 let g:showmarks_enable=0
+
+" ---------------
+" UndoTree
+" ---------------
+nmap <silent> <leader>u :UndotreeToggle<CR>
+if has("persistent_undo")
+  set undodir = '~/.vim/backup'
+  set undofile
+endif
 
 " ---------------
 " Neocachecompl

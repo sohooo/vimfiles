@@ -28,7 +28,7 @@ Here's a list of useful keyboard bindings:
 * `,f`      find file w/ CtrlP
 * `,y`      show YankRing
 * `,n`      toggle IndentGuides
-* `,u`      toggle Gundo
+* `,u`      toggle UndoTree
 * `gcc`     toggle comment on/off
 * `,vim`    edit vimrc
 * `,vir`    edit README.md (to look up bindings)
