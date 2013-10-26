@@ -25,7 +25,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'mbbill/undotree'
 " UI Additions
 Bundle 'mutewinter/vim-indent-guides'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'godlygeek/csapprox'
 Bundle 'Rykka/ColorV'
@@ -386,9 +386,10 @@ nnoremap <leader>y :YRShow<CR>
 let g:yankring_history_file = '.vim-yankring-hist'
 
 " ---------------
-" Powerline
+" Airline Statusbar
 " ---------------
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
 
 " ---------------
 " NERDTree
