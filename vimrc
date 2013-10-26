@@ -103,7 +103,8 @@ if has('win32') || has('win64')
 elseif has('gui_macvim')
   " MacVim
 
-  set guifont=Menlo\ Regular:h13
+  " set guifont=Menlo\ Regular:h13
+  set guifont=Sauce\ Code\ Powerline:h13
   " Hide Toolbar in MacVim
   if has("gui_running")
     set guioptions=egmrt
