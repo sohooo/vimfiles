@@ -67,6 +67,7 @@ Bundle "snipmate-snippets"
 " Language Additions
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-markdown'
 Bundle 'msanders/cocoa.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'pangloss/vim-javascript'
