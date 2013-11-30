@@ -67,7 +67,7 @@ Bundle "snipmate-snippets"
 " Language Additions
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-markdown'
+Bundle 'AzizLight/vim-markdown'
 Bundle 'msanders/cocoa.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'pangloss/vim-javascript'
@@ -78,6 +78,7 @@ Bundle 'mutewinter/taskpaper.vim'
 Bundle 'tpope/vim-cucumber'
 Bundle 'leshill/vim-json'
 Bundle 'rodjek/vim-puppet'
+Bundle 'groenewege/vim-less'
 " Libraries
 Bundle 'L9'
 Bundle 'tpope/vim-repeat'
@@ -233,8 +234,16 @@ nmap <silent> <leader>vir :e ~/.vim/README.md<CR>
 nmap <leader>u :syntax sync fromstart<cr>:redraw!<cr>
 
 " ----------------------------------------
+" Filetypes
+" ----------------------------------------
+
+au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.mkd set filetype=markdown
+
+" ----------------------------------------
 " Bindings
 " ----------------------------------------
+
 
 " Window Movement
 nmap <silent> <C-h> :wincmd h<CR>
