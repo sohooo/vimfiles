@@ -36,8 +36,6 @@ Bundle 'laktek/distraction-free-writing-vim'
 Bundle 'mutewinter/ir_black_mod'
 Bundle 'tomasr/molokai'
 Bundle 'cschlueter/vim-wombat'
-Bundle 'github.vim'
-Bundle 'proton.vim'
 Bundle '29decibel/codeschool-vim-theme'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'jpo/vim-railscasts-theme'
@@ -67,15 +65,15 @@ Bundle "snipmate-snippets"
 " Language Additions
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-endwise'
-Bundle 'AzizLight/vim-markdown'
-Bundle 'msanders/cocoa.vim'
+Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-liquid'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-cucumber'
+Bundle 'msanders/cocoa.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'itspriddle/vim-jquery'
-Bundle 'tpope/vim-rails'
-Bundle 'mutewinter/taskpaper.vim'
-Bundle 'tpope/vim-cucumber'
 Bundle 'leshill/vim-json'
 Bundle 'rodjek/vim-puppet'
 Bundle 'groenewege/vim-less'
@@ -233,12 +231,6 @@ nmap <silent> <leader>vim :e ~/.vim/vimrc<CR>
 nmap <silent> <leader>vir :e ~/.vim/README.md<CR>
 nmap <leader>u :syntax sync fromstart<cr>:redraw!<cr>
 
-" ----------------------------------------
-" Filetypes
-" ----------------------------------------
-
-au BufNewFile,BufRead *.md set filetype=markdown
-au BufNewFile,BufRead *.mkd set filetype=markdown
 
 " ----------------------------------------
 " Bindings
